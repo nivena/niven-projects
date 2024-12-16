@@ -1,9 +1,11 @@
 import Navbar from "@/components/Navbar";
+import Layout from "@/components/Layout";
 
 export default function Skills() {
     return (
         <>
         <Navbar/>
+        <Layout>
       <main className="container mx-auto p-6">
         <h1 className="text-4xl font-bold mb-4">Skills</h1>
         <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -14,6 +16,7 @@ export default function Skills() {
           <li className="p-2 border rounded-lg text-center shadow-sm">Tailwind CSS</li>
         </ul>
       </main>
+      </Layout>
     </>);
   }
   

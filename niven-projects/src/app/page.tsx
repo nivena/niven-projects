@@ -1,10 +1,13 @@
 import Image from "next/image";
 import ProjectCard from "@/components/ProjectCard";
 import Navbar from "@/components/Navbar";
+import Layout from "@/components/Layout";
+
 export default function Home() {
   return (
     <>
     <Navbar /> 
+    <Layout>
     <main className="container mx-auto p-6 space-y-12">
       {/* Projects Section */}
       <section id="projects" className="mb-12">
@@ -47,6 +50,7 @@ export default function Home() {
       </section>
 
     </main>
+    </Layout>
     </>
   );
 }
